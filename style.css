@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+header{
+    background-color:lightskyblue;
+    padding: 20px 0;
+    border-bottom: 2px solid lightskyblue;
+}
+
+.logo{
+    color: black;
+    
+}
+
+.logo h2{
+    font-family: cursive;
+    
+}
+
+
+.menu{
+    width: 90%;
+    text-align: right;
+}
+
+.menu a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.menu .btn-menu{
+    background-color: black;
+    display: inline-block;
+    padding: 8px 16px;
+    color: yellow;
+    border-radius: 6px;
+
+}
+
+.menu .btn-menu:hover{
+    background-color: grey;
+    color: white;
+}
+
+/*
+section main
+*/
+
+
+section.main{
+    background-image: url(imagens/teste.jpg);
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.main_cta{
+   width: 100%;
+   margin: 60px 0;
+   text-align: center;
+}
+
+.main_cta h2{
+    color: yellow;
+    font-size: 40px;
+    font-family:cursive;
+}
+
+.main_cta p{
+    color:lightyellow;
+    font-family: cursive;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.main_cta button{
+    background-color: black;
+    display: inline-block;
+    padding: 8px 30px;
+    color: yellow;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+}
+
+.main_cta button:hover{
+    color: white;
+}
+
+.diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diferencial-single{
+    background-color:lightskyblue;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+    opacity:65%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: opacity 2s;
+}
+.diferencial-single:hover{
+    opacity: 100%;
+}
+
+.btn{
+    background-color: red; 
+    opacity: 70%;
+    font-family: normal;
+    font-size: 15px;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: black;
+}
+
+.diferencial-single button{
+    color: white;
+    width: 8rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.diferencial-single button:hover{
+    color: yellow;
+}
+
+.diferencial-single i{
+    color: green;
+    font-size: 40px;
+    
+}
+
+.diferencial-single h2{
+    color: yellow;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.diferencial-single p{
+    color: black;
+    font-size: 14px;
+}
+
+section.sobre{
+    padding: 80px 0;
+    background-color:lightskyblue;
+}
+
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+
+}
+
+.chamada-sobre h2{
+    color: yellow;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.chamada-sobre p{
+    font-size: 14px;
+    color: white;
+    font-family: cursive;
+    margin: 10px 10px;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre p{
+    width: 48%;
+    margin-right: 2%;
+    color: #444444;
+}
+.conteudo-sobre span{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.conteudo-sobre i{
+    color: green;
+}
+
+section.conquistas{
+    background-color: yellow; /*parte da escrita +1000*/
+    padding: 20px 0;
+}
+
+.conquista-single{
+    width: 22%;
+    margin-right: 3%;
+    text-align: center;
+    color: red;
+}
+
+.conquista-single h2{
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.conquista-single img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.conquista-single p{
+    font-family: cursive;
+}
+
+.conquista-single img{
+    filter: grayscale(100%);
+    transform:scale(1,1) ;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.conquista-single img:hover{
+    filter: grayscale(0);
+    transform:scale(1.1,1.1) ;
+}
+
+.menu-items{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background-color:lightskyblue;
+    border-bottom: 2px solid yellow;/*cor da linha menu cell*/
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu-items.show{
+    opacity: 1;
+
+}
+
+.menu-items.hidde{
+    opacity: 0;
+}
+
+.menu-items a{
+    display: block;
+    text-decoration: none;
+    color: black;/*(cor da fonte menu cell)*/
+}
+
+.menu-items a:hover{
+    color: white;/*cor que quando vc passa o mouse fica (menu cell)*/
+}
+
+section.sobre-empreendedor{
+    padding: 40px 0;
+    background-color: #da3611;
+}
+
+.sobre-empreendedor-video{
+    width: 50%;
+}
+
+.sobre-empreendedor-video video{
+    max-width: 100%;
+}
+
+.sobre-empreendedor-content{
+    width: 50%;
+    padding: 0 50px;
+}
+
+.sobre-empreendedor-content h2{
+    color: yellow;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+.sobre-empreendedor-content p{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+@media screen and (max-width: 768px){
+    .diferencial-single{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .logo{
+        width: 20%;
+    }
+    .menu-mobile{
+        width: 80%;
+        text-align: right;
+        display: block;
+    }
+    .menu-mobile i{
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
+    }
+    .conteudo-sobre p{
+        width: 100%;
+        margin: 20px 20px;
+    }
+}
+
